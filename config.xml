@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.rmi.drumpad" android-versionCode="5" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>DrumPad</name>
+    <description>
+        Drum machine for music lovers.
+    </description>
+    <author email="ricardomillauro@gmail.com">
+        ricardomillauro
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Orientation" value="landscape" />
+    <preference name="Fullscreen" value="true" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <icon src="logo.png" density="ldpi" />
+        <icon src="logo.png" density="mdpi" />
+        <icon src="logo.png" density="hdpi" />
+        <icon src="logo.png" density="xhdpi" />
+    </platform>
+
+</widget>

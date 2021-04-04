@@ -1,0 +1,284 @@
+@charset "utf-8";
+@import "font.css";
+* {
+	-webkit-tap-highlight-color: rgba(
+		0,
+		0,
+		0,
+		0
+	); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+html,
+body {
+	-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+	background-attachment: fixed;
+	font-size: 12px;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: #212529;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+footer{
+	-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	width: 100%;
+	background-color: #212529;
+	overflow-y: hidden; 
+    overflow-x: hidden; 
+}
+
+.top {
+	width: 28px;
+	height: 28px;
+	float: center;
+	position: relative;
+	font-size: 16px;
+	text-align: center;
+	color: red;
+	top:2px;
+	z-index:10
+}
+
+header {
+	-webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+	-webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+	-webkit-user-select: none; /* prevent copy paste, to allow, change 'none' to 'text' */
+	background-attachment: fixed;
+	font-size: 12px;
+	height: 28px;
+	margin: 0px;
+	padding: 0px;
+	text-transform: uppercase;
+	width: auto;
+	background-color: #181b1d;
+}
+
+.centrar {
+	background-color: #000000;
+	text-align: center;
+}
+
+.left {
+  background-color: #000000;
+  color:  red;
+  position: absolute;
+  left: 0px;
+  height: 8px;
+  width: 8px;
+}
+.right {
+  background-color: #000000;
+  color:  red;
+  position: absolute;
+  height: 8px;
+  height: 8px;
+  right: 0px;
+}
+
+/* Drum Styles */
+.box {
+	padding: 1em;
+	background-color: #212529;
+}
+
+.boxdrum {
+	width: 50%;
+	height: 50%;
+}
+
+.drumg {
+	width: 160px;
+	height: 80px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+	color: rgba(248, 242, 242, 0.815);
+	background: #191b1d;
+	line-height: 25%;
+	-webkit-animation: drumlessg 1s ease-in-out infinite alternate;
+	-moz-animation: drumlessg 1s ease-in-out infinite alternate;
+	animation: drumlessg 1s ease-in-out infinite alternate;
+}
+
+.drumgD {
+	width: 120px;
+	height: 80px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	font-size: 14px;
+	text-align: center;
+	color: rgba(248, 242, 242, 0.815);
+	background: #191b1d;
+	line-height: 25%;
+	-webkit-animation: drumlessg 1s ease-in-out infinite alternate;
+	-moz-animation: drumlessg 1s ease-in-out infinite alternate;
+	animation: drumlessg 1s ease-in-out infinite alternate;
+}
+
+.bttn {
+	width: 26px;
+	height: 26px;
+	color: red;
+}
+
+@-webkit-keyframes drumlessg {
+	from {
+		box-shadow: 0 0 2px #fff, 0 0 4px #212529, 0 0 6px #111314, 0 0 8px #0a0a0a,
+			0 0 10px #0a0a0a, 0 0 12px #0a0a0a, 0 0 14px #030303;
+	}
+	to {
+		box-shadow: 0 0 4px #fff, 0 0 6px #03f517, 0 0 8px #66ff00, 0 0 10px #10f837,
+			0 0 12px #10f837, 0 0 14px #10f837, 0 0 16px #10f837;
+	}
+}
+
+.drumg span {
+	border: 0px solid;
+	background: transparent;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.drumgD span {
+	border: 0px solid;
+	background: transparent;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.drumr {
+	width: 160px;
+	height: 80px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+	color: rgba(248, 242, 242, 0.815);
+	background: #191b1d;
+	line-height: 25%;
+	-webkit-animation: drumlessr 1s ease-in-out infinite alternate;
+	-moz-animation: drumlessr 1s ease-in-out infinite alternate;
+	animation: drumlessr 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes drumlessr {
+	from {
+		box-shadow: 0 0 2px #fff, 0 0 4px #212529, 0 0 6px #111314, 0 0 8px #0a0a0a,
+			0 0 10px #0a0a0a, 0 0 12px #0a0a0a, 0 0 14px #030303;
+	}
+	to {
+		box-shadow: 0 0 4px #fff, 0 0 6px #f50303, 0 0 8px #ff002b, 0 0 10px #f8101c,
+			0 0 12px #f81010, 0 0 14px #f8101c, 0 0 16px #f81010;
+	}
+}
+
+.drumr span {
+	border: 0px solid;
+	background: transparent;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.drumb {
+	width: 160px;
+	height: 80px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+	color: rgba(248, 242, 242, 0.815);
+	background: #191b1d;
+	line-height: 25%;
+	-webkit-animation: drumlessb 1s ease-in-out infinite alternate;
+	-moz-animation: drumlessb 1s ease-in-out infinite alternate;
+	animation: drumlessb 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes drumlessb {
+	from {
+		box-shadow: 0 0 2px #fff, 0 0 4px #212529, 0 0 6px #111314, 0 0 8px #0a0a0a,
+			0 0 10px #0a0a0a, 0 0 12px #0a0a0a, 0 0 14px #030303;
+	}
+	to {
+		box-shadow: 0 0 4px #fff, 0 0 6px #0307f5, 0 0 8px #1100ff, 0 0 10px #3b10f8,
+			0 0 12px #1410f8, 0 0 14px #4210f8, 0 0 16px #2010f8;
+	}
+}
+
+.drumb span {
+	border: 0px solid;
+	background: transparent;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.drumy {
+	width: 160px;
+	height: 80px;
+	box-sizing: border-box;
+	float: left;
+	position: relative;
+	font-size: 18px;
+	text-align: center;
+	color: rgba(248, 242, 242, 0.815);
+	background: #191b1d;
+	line-height: 25%;
+	-webkit-animation: drumlessy 1s ease-in-out infinite alternate;
+	-moz-animation: drumlessy 1s ease-in-out infinite alternate;
+	animation: drumlessy 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes drumlessy {
+	from {
+		box-shadow: 0 0 2px #fff, 0 0 4px #212529, 0 0 6px #111314, 0 0 8px #0a0a0a,
+			0 0 10px #0a0a0a, 0 0 12px #0a0a0a, 0 0 14px #030303;
+	}
+	to {
+		box-shadow: 0 0 4px #fff, 0 0 6px #e5f503, 0 0 8px #eeff00, 0 0 10px #f8f410,
+			0 0 12px #f4f810, 0 0 14px #f4f810, 0 0 16px #f8e910;
+	}
+}
+
+.drumy span {
+	border: 0px solid;
+	background: transparent;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}

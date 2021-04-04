@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta
+			name="viewport"
+			content="initial-scale=1, width=640,height=400, viewport-fit=cover"
+		/>
+		<link rel="stylesheet" type="text/css" href="index.css" />
+		<meta name="msapplication-tap-highlight" content="no" />
+		<title>RETROPAD</title>
+		<link href="nesmin.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="app">
+			<div id="nescss">
+				<header>
+					<h2>
+						<div class="container">
+							<div class="left">
+								<div type="button" class="top" onclick="app.closew()">X</div>
+							</div>
+							<div class="right">
+								<div
+									type="button"
+									id="rightHand"
+									class="top"
+									onclick="app.hand()"
+								>
+									<
+								</div>
+								<div
+									type="button"
+									id="leftHand"
+									class="top"
+									onclick="app.hand()"
+								>
+									>
+								</div>
+							</div>
+							<div class="centrar">DrumPad</div>
+						</div>
+					</h2>
+				</header>
+				<main class="main-content">
+					<div class="box">
+						<div id="leftHandT">
+							<table class="nes-table is-dark is-centered">
+								<thead>
+									<tr>
+										<th>
+											<div
+												class="drumb card nes-container"
+												id="kick"
+												ontouchstart="app.play('kick');"
+											>
+												<span>Kick</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumr card nes-container"
+												id="snare"
+												ontouchstart="app.play('snare');"
+											>
+												<span>Snare</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumy card nes-container"
+												id="tom1"
+												ontouchstart="app.play('tom1');"
+											>
+												<span>Tom 1</span>
+											</div>
+										</th>
+
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="hi-hat"
+												ontouchstart="app.play('hi-hat');"
+											>
+												<span>HiHat</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="ride"
+												ontouchstart="app.play('ride');"
+											>
+												<span>Ride</span>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div
+												class="drumb card nes-container"
+												id="low"
+												ontouchstart="app.play('low');"
+											>
+												<span>Low</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumr card nes-container"
+												id="clap"
+												ontouchstart="app.play('clap');"
+											>
+												<span>Clap</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumy card nes-container"
+												id="tom2"
+												ontouchstart="app.play('tom2');"
+											>
+												<span>Tom 2</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="hat-open"
+												ontouchstart="app.play('hat-open');"
+											>
+												<span>HHOpen</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="crashc"
+												ontouchstart="app.play('crashc');"
+											>
+												<span>Crash C</span>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<div
+												class="drumb card nes-container"
+												id="sub-low"
+												ontouchstart="app.play('sub-low');"
+											>
+												<span>SubLow</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumr card nes-container"
+												id="rim"
+												ontouchstart="app.play('rim');"
+											>
+												<span>Rim</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumy card nes-container"
+												id="tom3"
+												ontouchstart="app.play('tom3');"
+											>
+												<span>Tom 3</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="crash"
+												ontouchstart="app.play('crashl');"
+											>
+												<span>Crash L</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="crashB"
+												ontouchstart="app.play('crashr');"
+											>
+												<span>Crash R</span>
+											</div>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div id="rightHandT">
+							<table class="nes-table is-dark is-centered">
+								<thead>
+									<tr>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="hi-hat"
+												ontouchstart="app.play('hi-hat');"
+											>
+												<span>HiHat</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="ride"
+												ontouchstart="app.play('ride');"
+											>
+												<span>Ride</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumy card nes-container"
+												id="tom1"
+												ontouchstart="app.play('tom1');"
+											>
+												<span>Tom 1</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumr card nes-container"
+												id="snare"
+												ontouchstart="app.play('snare');"
+											>
+												<span>Snare</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumb card nes-container"
+												id="kick"
+												ontouchstart="app.play('kick');"
+											>
+												<span>Kick</span>
+											</div>
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="hat-open"
+												ontouchstart="app.play('hat-open');"
+											>
+												<span>HHOpen</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="crashc"
+												ontouchstart="app.play('crashc');"
+											>
+												<span>Crash C</span>
+											</div>
+										</th>
+
+										<th>
+											<div
+												class="drumy card nes-container"
+												id="tom2"
+												ontouchstart="app.play('tom2');"
+											>
+												<span>Tom 2</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumr card nes-container"
+												id="clap"
+												ontouchstart="app.play('clap');"
+											>
+												<span>Clap</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumb card nes-container"
+												id="low"
+												ontouchstart="app.play('low');"
+											>
+												<span>Low</span>
+											</div>
+										</th>
+									</tr>
+									<tr>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="crash"
+												ontouchstart="app.play('crashl');"
+											>
+												<span>Crash L</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumgD card nes-container"
+												id="crash"
+												ontouchstart="app.play('crashr');"
+											>
+												<span>Crash R</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumy card nes-container"
+												id="tom3"
+												ontouchstart="app.play('tom3');"
+											>
+												<span>Tom 3</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumr card nes-container"
+												id="rim"
+												ontouchstart="app.play('rim');"
+											>
+												<span>Rim</span>
+											</div>
+										</th>
+										<th>
+											<div
+												class="drumb card nes-container"
+												id="sub-low"
+												ontouchstart="app.play('sub-low');"
+											>
+												<span>SubLow</span>
+											</div>
+										</th>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+		<script type="text/javascript">
+			app.hand();
+			app.initialize();
+		</script>
+	</body>
+	<footer></footer>
+</html>

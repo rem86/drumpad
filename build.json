@@ -1,0 +1,18 @@
+{
+    "android": {
+        "debug": {
+            "keystore": "Nbormi.keystore",
+            "storePassword": "Patricia88",
+            "alias": "Nbormi",
+            "password" : "Patricia88",
+            "keystoreType": ""
+        },
+        "release": {
+            "keystore": "Nbormi.keystore",
+            "storePassword": "Patricia88",
+            "alias": "Nbormi",
+            "password" : "Patricia88",
+            "keystoreType": ""
+        }
+    }
+}

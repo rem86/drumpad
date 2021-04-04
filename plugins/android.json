@@ -1,0 +1,34 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-admob": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    },
+    "cordova-plugin-nativeaudio": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    },
+    "cordova-plugin-screen-orientation": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-connectivity-monitor": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    },
+    "cordova-play-services-version-adapter": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    },
+    "es6-promise-plugin": {
+      "PACKAGE_NAME": "com.rmi.drumpad"
+    }
+  }
+}

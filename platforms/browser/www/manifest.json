@@ -1,0 +1,12 @@
+{
+  "background_color": "#FFF",
+  "display": "standalone",
+  "name": "DrumPad",
+  "short_name": "DrumPad",
+  "version": "com.rmi.drumpad",
+  "description": "Drum machine for music lovers.",
+  "author": "ricardomillauro",
+  "icons": [],
+  "orientation": "landscape",
+  "start_url": "index.html"
+}
